@@ -1,0 +1,19 @@
+var likeCount = 0;
+
+function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    
+    if (username === 'Matt' && password === 'secret') {
+        document.getElementById('error').classList.add('hide');
+        window.location.href = 'content.html';
+    } else {
+        document.getElementById('error').classList.remove('hide');
+    }
+}
+
+function like() {
+    var likes = document.getElementById('likes');
+    likeCount += 1;
+    likes.innerHTML = "Likes: " + likeCount;
+}
