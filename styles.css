@@ -1,7 +1,76 @@
+/*
+gold #C0B283
+silk #DCD0C0
+paper #F4F4F4
+charcoal #373737
+*/
+
+* {
+	font-family: Times, serif;
+}
+
+html, body {
+   padding: 0;
+   margin: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+input {
+    
+}
+
+#loginForm {
+    
+    
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 384px;
+    height: 256px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -128px 0px 0px -192px;
+}
+
 #error {
     color: red;
 }
 
 .hide {
     display: none;
+}
+
+#tabs {
+}
+
+.tab {
+    width: 25%;
+    height: 64px;
+    margin-right: -4px;
+    background-color: #373737;
+    color: #FFFFFF;
+    border: 0;
+    font-size: 24px;
+}
+
+.tab:hover {
+    background-color: #C0B283;
+    color: #373737;
+}
+
+.active {
+    background-color: #F4F4F4;
+    color: #373737;
+}
+
+header {
+    background-color: #C0B283;
+    color: #373737;
+    height: 64px;
+    line-height: 64px;
 }

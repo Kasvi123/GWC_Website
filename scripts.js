@@ -6,7 +6,7 @@ function login() {
     
     if (username === 'Matt' && password === 'secret') {
         document.getElementById('error').classList.add('hide');
-        window.location.href = 'content.html';
+        window.location.href = 'home.html';
     } else {
         document.getElementById('error').classList.remove('hide');
     }
@@ -15,5 +15,9 @@ function login() {
 function like() {
     var likes = document.getElementById('likes');
     likeCount += 1;
-    likes.innerHTML = "Likes: " + likeCount;
+    likes.innerHTML = 'Likes: ' + likeCount;
+}
+
+function goToPage(pageName) {
+	window.location.href = pageName + '.html';
 }
