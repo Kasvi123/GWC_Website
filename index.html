@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     
-    <body>
+    <body id="loginBackground">
         <script src="scripts.js"></script>
         
 		<header>
@@ -24,16 +24,12 @@
 		</div>
         
         <div id="loginForm">
-            <label>Username:</label><br>
-            <input type="text" id="username"><br>
-			
-            <label>Password:</label><br>
-            <input type="password" id="password"><br>
-			
-            <button type="button" onclick="login()">Login</button>
-			
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button type="button" id="loginButton" onclick="login()">Login</button>
             <p id="error" class="hide">Access Denied!</p>
         </div>
+		
     </body>
     
 </html>
